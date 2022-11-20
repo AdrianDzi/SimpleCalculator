@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:stretchColumns="3"
+
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtInput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/result_shape"
+        android:maxLength="14"
+        android:padding="3dp"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textSize="42dp"
+        android:textStyle="bold" />
+
+    <TableRow>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/seven_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:background="@drawable/number_button_shape"
+            android:onClick="onDigit"
+            android:text="7"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/eight_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:background="@drawable/number_button_shape"
+            android:onClick="onDigit"
+            android:text="8"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nine_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:background="@drawable/number_button_shape"
+            android:onClick="onDigit"
+            android:text="9"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/div_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:background="@drawable/operation_button_shape"
+            android:onClick="onOperator"
+            android:text="/"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/four_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_button_shape"
+            android:onClick="onDigit"
+            android:text="4"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/five_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_button_shape"
+            android:onClick="onDigit"
+            android:text="5"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/six_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_button_shape"
+            android:onClick="onDigit"
+            android:text="6"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mul_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/operation_button_shape"
+            android:onClick="onOperator"
+            android:text="*"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/one_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_button_shape"
+            android:onClick="onDigit"
+            android:text="1"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/two_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_button_shape"
+            android:onClick="onDigit"
+            android:text="2"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/three_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_button_shape"
+            android:onClick="onDigit"
+            android:text="3"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/minus_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/operation_button_shape"
+            android:onClick="onOperator"
+            android:text="-"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_button_shape"
+            android:onClick="onClear"
+            android:text="C"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/zero_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_button_shape"
+            android:onClick="onDigit"
+            android:text="0"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dot_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/number_button_shape"
+            android:onClick="onDecimalPoint"
+            android:text="."
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/plus_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/operation_button_shape"
+            android:onClick="onOperator"
+            android:text="+"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/equals_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="3"
+        android:background="@drawable/operation_button_shape"
+        android:onClick="onEqual"
+        android:text="="
+        android:textSize="28dp"
+        android:textStyle="bold" />
+</TableLayout>
